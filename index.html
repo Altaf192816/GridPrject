@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">Understanding Grid</h2>
+            <p>“Tranquility, serenity, and beauty of nature taught me how to find happiness in life and in the silence of eternity.” </p>
+        </div>
+        <div class="gallery">
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1525824236856-8c0a31dfe3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);">
+                Waterfall</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80);">
+                Hills</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80);">
+                Oceans</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+                Rain</div>
+            <div class="box"
+                style="background-image: url(https://plus.unsplash.com/premium_photo-1670764059359-52807e9e2f92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+                Mountains</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1544243339-135587e56e02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+                Plant</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=734&q=80);">
+                Beach</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".gallery").addEventListener("mouseover", function () {
+            document.querySelector(".container").style.background = "linear-gradient(to left, #00A170, #003d2b)";
+        });
+
+        document.querySelector(".gallery").addEventListener("mouseout", function () {
+            document.querySelector(".container").style.background = "linear-gradient(to right, #00A170, #003d2b)";
+        });
+    </script>
+</body>
+
+</html>
